@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0499b18f-9d0d-4477-94c2-3052c025e0f5/deploy-status)](https://app.netlify.com/sites/covid-metric/deploys)
+![CI check](https://github.com/Gedewon/covid-metrics/actions/workflows/linters.yml/badge.svg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
