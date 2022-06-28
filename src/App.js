@@ -2,7 +2,7 @@ import Home from "./component/Home/Home";
 
 function App() {
   return (
-    <h1 className="text-3xl h-screen font-bold underline ">
+    <h1 className="">
       <Home />
     </h1>
   );

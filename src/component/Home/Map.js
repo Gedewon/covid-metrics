@@ -16,15 +16,17 @@ const Map = () => {
     const handleMoveEnd = (position)=>{
         setPosition(position);
     }
-    
+
   return (
     <div>
-      <ComposableMap  className="h-[400px] w-full cursor-pointer"
+      <ComposableMap  className="h-[400px] w-full cursor-pointer bg-gray-400"
         projectionConfig={{
             rotate:[-10,0,0],
             scale:147
         }}
-        data-tip="tooltip">
+        data-tip="tooltip"
+        onClick={(e)=>{e.preventDefault()}}
+        >
 
             <ZoomableGroup
             zoom={position.zoom}
@@ -32,8 +34,8 @@ const Map = () => {
             onMoveEnd={handleMoveEnd}
         
             >
-                <Sphere stroke='#000' strokeWidth={0.3} />
-                <Graticule stroke='#000' strokeWidth={0.3} />
+                {/* <Sphere stroke='#444' strokeWidth={0.35} /> */}
+                {/* <Graticule stroke='#000' strokeWidth={0.3} /> */}
 
 
         <Geographies geography="/features.json" >
@@ -51,7 +53,7 @@ const Map = () => {
             }}
             style={{
                 default: {
-                    fill: "#D6D6DA",
+                    fill: "#000234",
                     outline: "none"
                 },
                 hover: {

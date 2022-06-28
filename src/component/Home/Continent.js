@@ -4,7 +4,9 @@ import React from 'react'
 
 const Continent = () => {
   return (
-    <div>Continent</div>
+    <section className='w-1/2'>
+
+    </section>
   )
 }
 
