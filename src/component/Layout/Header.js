@@ -2,7 +2,7 @@ import React from 'react'
 import {ChevronLeftIcon,CogIcon,MicrophoneIcon} from '@heroicons/react/solid';
 function Header() {
   return (
-    <header className='flex justify-between font-control py-2 bg-redBackground items-center'>
+    <header className='flex justify-between sticky font-control py-2 bg-redBackground items-center'>
         <ChevronLeftIcon  className="h-6 w-6 text-white"/>
         <section >
           <p className='text-white'>most views </p>

@@ -1,8 +1,9 @@
+import Home from "./component/Home/Home";
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline bg-red-600">
-       Hello World!
+    <h1 className="text-3xl h-screen font-bold underline ">
+      <Home />
     </h1>
   );
 }
