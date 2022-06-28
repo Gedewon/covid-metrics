@@ -1,19 +1,22 @@
-import React from 'react'
-import Continent from './Continent'
-import Map from './Map'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Continent from './Continent';
+import Map from './Map';
 
-const Home = () => {
-  return (
-    <section>
-        <Map />
-        <div className='bg-black bg-blend-multiply'>
-        <HeadLine headingText='CONTINENT' />
-        </div>
-        <Continent />
-    </section>
-  )
-}
+const Home = () => (
+  <section>
+    <Map />
+    <div className="bg-black bg-blend-multiply">
+      <HeadLine headingText="CONTINENT" />
+    </div>
+    <Continent />
+  </section>
+);
 
-export const HeadLine = ({headingText})=><h1 className='pl-2 font-control bg-redBackground font-semibold text-white bg-blend-multiply'>{headingText}</h1>
+export const HeadLine = ({ headingText }) => <h1 className="pl-2 font-control bg-redBackground font-semibold text-white bg-blend-multiply">{headingText}</h1>;
 
-export default Home
+HeadLine.propTypes = {
+  headingText: PropTypes.string.isRequired,
+};
+
+export default Home;

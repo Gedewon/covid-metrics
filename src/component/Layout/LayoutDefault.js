@@ -1,14 +1,18 @@
-import React from 'react'
-import Footer from './Footer'
-import Header from './Header'
-function LayoutDefault({children}) {
+import React from 'react';
+import PropTypes from 'prop-types';
+import Footer from './Footer';
+import Header from './Header';
+
+function LayoutDefault({ children }) {
   return (
     <div>
-        <Header/>    
-        {children}
-        <Footer/>
+      <Header />
+      {children}
+      <Footer />
     </div>
-  )
+  );
 }
-
-export default LayoutDefault
+LayoutDefault.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+export default LayoutDefault;

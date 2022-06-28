@@ -1,13 +1,7 @@
-import React from 'react'
+import React from 'react';
 
+const Continent = () => (
+  <section className="w-1/2" />
+);
 
-
-const Continent = () => {
-  return (
-    <section className='w-1/2'>
-
-    </section>
-  )
-}
-
-export default Continent
+export default Continent;
