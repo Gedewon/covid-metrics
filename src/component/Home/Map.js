@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import {
   ComposableMap,
   Geographies,
@@ -8,10 +9,17 @@ import {
   ZoomableGroup,
 } from 'react-simple-maps';
 import ReactTooltip from 'react-tooltip';
+import 'flag-icons';
+
+export const numberWithCommas = (x) => {
+  if (!x) return '';
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+};
 
 const Map = () => {
   const [position, setPosition] = useState({ coordinates: [0, 0], zoom: 1 });
   const [content, setTooltipContent] = useState('');
+  const contentList = useSelector((state) => state.Continent);
 
   const handleMoveEnd = (position) => {
     setPosition(position);
@@ -20,7 +28,7 @@ const Map = () => {
   return (
     <div>
       <ComposableMap
-        className="h-[400px] w-full cursor-pointer bg-gray-400"
+        className="h-auto w-full cursor-pointer "
         projectionConfig={{
           rotate: [-10, 0, 0],
           scale: 147,
@@ -44,7 +52,7 @@ const Map = () => {
                 geography={geo}
                 fill=""
                 onMouseEnter={() => {
-                  setTooltipContent(`${geo.properties.name}`);
+                  setTooltipContent(contentList[`${geo.properties.name}`]?.All);
                 }}
                 onMouseLeave={() => {
                   setTooltipContent('');
@@ -68,7 +76,33 @@ const Map = () => {
           </Geographies>
         </ZoomableGroup>
       </ComposableMap>
-      <ReactTooltip>{content}</ReactTooltip>
+      <ReactTooltip>
+        {
+          content
+            ? (
+              <>
+                <span className={`'w-min   px-auto fi fi-${content?.abbreviation?.toLowerCase()}`} />
+                <p className="text-lg">
+                  Country:
+                  {content?.country}
+                </p>
+                <p className="text-lg">
+                  Confirmed:
+                  {numberWithCommas(content?.confirmed)}
+                </p>
+                <p className="text-lg">
+                  Death:
+                  {numberWithCommas(content?.deaths)}
+                </p>
+                <p className="text-lg">
+                  Population:
+                  {numberWithCommas(content?.population)}
+                </p>
+              </>
+            )
+            : <p>No data available!!</p>
+        }
+      </ReactTooltip>
     </div>
   );
 };
