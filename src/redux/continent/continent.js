@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const LOAD = 'COVID-METRICS/CONTINENT/LOAD';
+export const LOAD = 'COVID-METRICS/CONTINENT/LOAD';
 
 const initialState = JSON.parse(localStorage.getItem('content'));
 
