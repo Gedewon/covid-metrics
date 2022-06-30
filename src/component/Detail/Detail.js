@@ -62,8 +62,7 @@ const Detail = () => {
           </div>
         ))
         : (
-          <div className="bg-white">
-
+          <div className="bg-white pb-8">
             <Error404 />
           </div>
         )}

@@ -54,7 +54,7 @@ const Continent = () => {
           </div>
         ))
         : (
-          <span className="bg-white pb-8 ">
+          <span className="bg-white pb-8 w-full">
             <Error404 />
           </span>
         )
