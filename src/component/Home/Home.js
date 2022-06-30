@@ -47,6 +47,7 @@ const Home = () => {
               </h1>
             </div>
             <Map />
+
             <div className="bg-black bg-blend-multiply">
               <HeadLine headingText="CONTINENT" />
             </div>
