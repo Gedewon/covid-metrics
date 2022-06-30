@@ -18,12 +18,12 @@ const Home = () => {
       dispatch(loadContent());
       setTimeout(() => {
         setIsLoading(false);
-      }, 3000);
+      }, 300);
     }
     if (localStorage.getItem('content')) {
       setTimeout(() => {
         setIsLoading(false);
-      }, 3000);
+      }, 300);
     }
 
     return () => { isDispose = true; };
