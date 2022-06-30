@@ -5,6 +5,17 @@
 
 >covid-metrics is a website app for user's to get real time covid cases through the world.
 ![Screenshot from 2022-06-30 04-57-25](https://user-images.githubusercontent.com/56429354/176659513-c51e5e68-2755-48f7-83f3-f42e787c5720.png)
+
+[LIVE DEMO](https://covid-metric.netlify.app/)
+
+## Built With
+
+- React Js 
+- Redux 
+- React Router 
+- GitFlow
+
+
 ## Development set up
 
 Clone Repository using
