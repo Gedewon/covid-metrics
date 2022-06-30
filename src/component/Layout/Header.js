@@ -1,10 +1,13 @@
 import React from 'react';
 import { ChevronLeftIcon, CogIcon, MicrophoneIcon } from '@heroicons/react/solid';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <header className="flex justify-between sticky font-control py-2 sm:p-6 bg-redBackground items-center">
-      <ChevronLeftIcon className="h-6 w-6 sm:h-10 sm:w-10 text-white" />
+      <Link to="/">
+        <ChevronLeftIcon className="h-6 w-6 sm:h-10 sm:w-10 text-white" />
+      </Link>
       <section>
         <p className="text-white sm:text-lg sm:text-bold">most views </p>
       </section>
