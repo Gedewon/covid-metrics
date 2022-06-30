@@ -1,9 +1,31 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0499b18f-9d0d-4477-94c2-3052c025e0f5/deploy-status)](https://app.netlify.com/sites/covid-metric/deploys)
 ![CI check](https://github.com/Gedewon/covid-metrics/actions/workflows/linters.yml/badge.svg)
 
-# Getting Started with Create React App
+# Project Name : COVID GLOBAL METRICS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+"covid-metrics" is a website app for user's to get real time covid cases through the world.
+
+## Development set up
+
+Clone Repository using
+
+`git clone git@github.com:gedewon/covid-metrics.git`
+
+OR using HTTPS
+
+`git clone https://github.com/gedewon/covid-metrics.git`
+
+move into project directory
+
+`cd covid-metrics`
+
+Install Project dependencies using `NPM`
+
+`npm install`
+
+launch project locally with
+
+`npm start`
 
 ## Available Scripts
 
@@ -42,32 +64,24 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 **Gedewon**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- GitHub: [@githubhandle](https://github.com/gedewon)
+- Twitter: [@twitterhandle](https://twitter.com/gedewon)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/gedewon)
 
-### Code Splitting
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions, issues, and feature requests are welcome!
 
-### Analyzing the Bundle Size
+Feel free to check the [issues page](https://github.com/Gedewon/covid-metrics/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Show your support
 
-### Making a Progressive Web App
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📝 License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.
