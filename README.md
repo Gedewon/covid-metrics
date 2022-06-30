@@ -89,6 +89,11 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/Gedewon/covid-metrics/issues).
 
+## Acknowledgments
+
+- Based on [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) author of the original design.
+- COVID 19 World data api [M-Media-Group](https://github.com/M-Media-Group/Covid-19-API)
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
