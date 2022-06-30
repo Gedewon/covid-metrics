@@ -55,8 +55,8 @@ const Detail = () => {
 
     <section className="bg-black">
 
-      <div className="flex  w-full h-[200px] bg-redBackground drop-shadow-2xl brightness-50 items-center justify-around p-12">
-        <ICON className="w-auto h-min" />
+      <div className="flex  w-full h-[400px] bg-redBackground drop-shadow-2xl brightness-50 items-center justify-around p-12">
+        <ICON className="w-auto h-min sm:h-[400px] " />
         <p className="text-white font-primary font-semibold text-lg text-center">{continent}</p>
       </div>
       <span className="brightness-49">
