@@ -2,10 +2,8 @@ import React, { useMemo } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import ContinentLists from '../../data/ContinentIcons/ContinentLists';
-// import { loadCountry } from '../../redux/country/country';
 import { HeadLine } from '../Home/Home';
 import 'flag-icons';
-// import Error404 from './component/commonComponent/404';
 import Error404 from '../commonComponent/404';
 import { numberWithCommas } from '../Home/Map';
 
@@ -15,29 +13,10 @@ const Detail = () => {
 
   const continentList = useSelector((state) => state.Continent);
 
-  // UN COMMENT THIS WHEN API IS OPEN AGAIN
-  // const country = useSelector((state) => state.Country);
-  /**
-   * useEffect(() => {
-    let isDispose = false;
 
-    if (!isDispose && !localStorage.getItem(`${continent}`)) {
-      dispatch(loadCountry(continent));
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 300);
-    }
-    if (localStorage.getItem('content')) {
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 300);
-    }
-
-    return () => { isDispose = true; };
-  }, [continent]);
-   */
-
-  // Note: I am going to manually filter from cache since the API blocked my request
+  // Note: I am going to manually 
+  // filter from cache since the API blocked 
+  // i found out the api is running in AWS lambda and they block requests
 
   const listOfCountry = useMemo(() => {
     if (!continentList) return [];
