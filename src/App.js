@@ -1,10 +1,17 @@
+import { Routes, Route } from 'react-router-dom';
 import Home from './component/Home/Home';
+import Detail from './component/Detail/Detail';
+import Error404 from './component/commonComponent/404';
 
 function App() {
   return (
-    <h1 className="">
-      <Home />
-    </h1>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/detail">
+        <Route path=":continent" element={<Detail />} />
+      </Route>
+      <Route path="*" element={<Error404 />} />
+    </Routes>
   );
 }
 
